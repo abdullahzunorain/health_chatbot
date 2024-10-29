@@ -1,4 +1,4 @@
 streamlit
 transformers
 torch
-torch  # Ensure this is included for GPU support
+accelerate
