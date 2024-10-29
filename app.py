@@ -33,7 +33,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 # Load model function
 @st.cache_resource
 def load_model():
-    model_name = "kingabzpro/Gemma-2-9b-it-chat-doctor"
+    model_name = "Science-geek32/DialoGPT-small-doctor2.0"
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     # model = AutoModelForCausalLM.from_pretrained(model_name, device_map="auto")
     model = AutoModelForCausalLM.from_pretrained(model_name)
