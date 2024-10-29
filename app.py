@@ -35,7 +35,8 @@ from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 def load_model():
     model_name = "kingabzpro/Gemma-2-9b-it-chat-doctor"
     tokenizer = AutoTokenizer.from_pretrained(model_name)
-    model = AutoModelForCausalLM.from_pretrained(model_name, device_map="auto")
+    # model = AutoModelForCausalLM.from_pretrained(model_name, device_map="auto")
+    model = AutoModelForCausalLM.from_pretrained(model_name)
     return pipeline("text-generation", model=model, tokenizer=tokenizer)
 
 # Load the model
